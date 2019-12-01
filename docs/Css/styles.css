@@ -1,0 +1,135 @@
+/* ------------------------------------------------------------------------- */
+/* COLORES
+
+Rojo: #d03b40
+Beige: #ded6c0
+Blanco: #f5f0ed
+Gris: #241d1b
+
+Texto claro: #f5f0ed
+Texto oscuro: #3c3c3b
+
+
+TIPOGRAFÍAS
+
+Open Sans Regular
+Open Sans Extrabold
+
+
+TAMAÑOS
+
+Encabezado 1r nivel: 44px
+Encabezado 2º nivel: 28px
+Encabezado 3r nivel: 24px
+Cuerpo de texto: 16px
+Botones: 14px */
+
+/* *{
+    border: 1px solid seashell;
+} */
+
+@font-face{
+    font-family: 'OpenSans-Bold';
+    src: url(../Tipografia/OpenSans-Bold.ttf);
+}
+
+@font-face{
+    font-family: 'OpenSans-Regular';
+    src: url(../Tipografia/OpenSans-Regular.ttf);
+}
+
+body{
+    background: lightslategray;
+    margin: auto;
+}
+/* ------------------------------heaer-------------------------------------- */
+/* ------------------------------heaer-------------------------------------- */
+header{
+    height: 100vh;
+    background-image: url("../Images/Fondo1.jpg");
+    background-size: cover;
+    background-position: center;
+    color: #f5f0ed;
+}
+
+p{
+    font-family: OpenSans-Regular, sans-serif;
+}
+
+h2{
+    font-family: OpenSans-Bold, sans-serif;
+}
+
+#menu-logo{
+    height: 200px;
+
+}
+
+#logo{
+    float: left;
+    margin: 15px;
+}
+
+#menu{
+    padding: 0;
+    margin: 20px;
+    float: right;
+}
+
+#menu li{
+    display: inline;
+}
+
+#menu li a{
+    padding: 4px;
+    text-decoration: none;
+    color: #f5f0ed;
+    font-family: OpenSans-Bold, sans-serif;
+}
+
+#enunciado{
+    height: 200px;
+    text-align: center;
+}
+
+#enunciado h1{
+    font-family: OpenSans-Bold, sans-serif;
+}
+
+#enunciado p{
+    font-family: OpenSans-Regular, sans-serif;
+    margin: auto;
+    line-height: 160%;
+    max-width: 450px;
+}
+/* -----------------------------Articles---------------------------- */
+
+.articles{
+    height: 380px;
+    display: flex;
+    align-items: center;
+}
+
+.articles .ar1{
+    height: 380px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background: #d03b40;
+    color: #ded6c0;
+}
+
+.articles .ar2{
+    height: inherit;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background: #ded6c0;
+    color: #d03b40;
+}
+/* -----------------------------Explorar---------------------------- */
+
