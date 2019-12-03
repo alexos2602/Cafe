@@ -31,6 +31,7 @@ Botones: 14px */
 @font-face{
     font-family: 'OpenSans-Bold';
     src: url(../Tipografia/OpenSans-Bold.ttf);
+    font-weight: bold;
 }
 
 @font-face{
@@ -46,7 +47,7 @@ body{
 /* ------------------------------heaer-------------------------------------- */
 header{
     height: 100vh;
-    background-image: url("../Images/Fondo1.jpg");
+    background-image: url(../Images/Fondo1.jpg);
     background-size: cover;
     background-position: center;
     color: #f5f0ed;
@@ -93,7 +94,18 @@ h2{
 }
 
 #enunciado h1{
+    font-size: 50px;
     font-family: OpenSans-Bold, sans-serif;
+    line-height: 50px;
+}
+
+#enunciado hr{
+    position: relative;
+    width: 80px;
+    height: 2.1px;
+    border: none;
+    background: white;
+    top: -8px;
 }
 
 #enunciado p{
@@ -108,6 +120,11 @@ h2{
     height: 380px;
     display: flex;
     align-items: center;
+}
+
+.h2articles{
+    font-size: 25px;
+    line-height: 27px;
 }
 
 .articles .ar1{
@@ -133,3 +150,46 @@ h2{
 }
 /* -----------------------------Explorar---------------------------- */
 
+.explorar{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    height: 540px;
+    background-image: url(../Images/Fondo2.jpg);
+    background-size: cover;
+    background-position: center;
+    color: #f5f0ed;
+}
+
+.explorar h2{
+    font-size: 45px;
+}
+
+.explorar p{
+    font-family: OpenSans-Regular, sans-serif;
+    margin: 20px auto 35px;
+    line-height: 160%;
+    max-width: 450px;
+}
+
+.explorar hr{
+    position: relative;
+    top: -15px;
+    width: 80px;
+    height: 2.1px;
+    border: none;
+    background: white;
+}
+
+.explorar button{
+    background: none;
+    color: #f5f0ed;
+    border: 2px solid #f5f0ed;
+    max-width: 270px;
+    padding: 12px;
+    cursor: pointer;
+}
+
+/* -----------------------------Articles 2---------------------------- */
