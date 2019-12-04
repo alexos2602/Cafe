@@ -193,3 +193,40 @@ h2{
 }
 
 /* -----------------------------Articles 2---------------------------- */
+
+.articles2{
+    display: flex;
+    align-items: center;
+    height: 550px;
+    background:#f5f0ed;
+}
+
+.articles2 h2{
+    margin-top: 0;
+    margin-bottom: 0;
+    color:#3c3c3b;
+}
+
+.articles2 p{
+    margin-top: 0;
+    height: 130px;
+    color: #3c3c3b;
+}
+
+.imgleft{
+    float: left;
+    padding-right: 10px;
+}
+
+.margen{
+    width: 50%;
+    margin: 0 20px;
+}
+
+.mbottom{
+    margin-bottom: 40px;
+}
+
+.part2{
+    width: 50%;
+}
