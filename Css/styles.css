@@ -127,24 +127,21 @@ h2{
     line-height: 27px;
 }
 
-.articles .ar1{
-    height: 380px;
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    background: #d03b40;
-    color: #ded6c0;
-}
-
-.articles .ar2{
+.margenar{
     height: inherit;
     width: 50%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: center;
+}
+
+.articles .ar1{
+    background: #d03b40;
+    color: #ded6c0;
+}
+
+.articles .ar2{
     background: #ded6c0;
     color: #d03b40;
 }
@@ -227,6 +224,44 @@ h2{
     margin-bottom: 40px;
 }
 
-.part2{
+/* -----------------------------Contacto ---------------------------- */
+
+.donde{
+    height: 380px;
+    display: flex;
+    align-items: center;
+}
+
+.contmargen{
+    height: inherit;
     width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.contacta{
+    background: #ded6c0;
+    color: #d03b40;
+}
+
+.donde{
+    background: #d03b40;
+    color: #ded6c0;
+}
+
+span{
+    font-family: OpenSans-Regular, sans-serif;
+}
+
+/* -----------------------------Derechos ---------------------------- */
+
+.derechos{
+    display: flex;
+    padding-left: 20px;
+    align-items: center;
+    height: 150px;
+    color: white;
+    background: #251d1b;
 }
