@@ -120,7 +120,7 @@ h1, h2, a, button{
 @media screen and (max-width: 500px){
 
     header{
-    height: auto;
+    height: 100vh;
     }
 
     #menu-logo{
@@ -133,7 +133,7 @@ h1, h2, a, button{
     }
 
     #menu{
-        margin: 0;
+        margin-top: 10%;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -151,6 +151,7 @@ h1, h2, a, button{
 
     #enunciado{
         height: auto;
+        margin-top: 15%;
     }
 
     #enunciado h1{
@@ -193,6 +194,22 @@ h1, h2, a, button{
 .articles .ar2{
     background: #ded6c0;
     color: #d03b40;
+}
+
+@media screen and (max-width: 500px){
+    .articles{
+        flex-direction: column;
+        height: 500px;
+    }
+    
+    .margenar{
+        width: 100%;
+        padding: 0;
+    }
+    
+    .articles p{
+        padding: 0 15px;
+    }
 }
 /* -----------------------------Explorar---------------------------- */
 
@@ -238,6 +255,16 @@ h1, h2, a, button{
     cursor: pointer;
 }
 
+@media screen and (max-width: 500px){
+
+    .explorar p{
+        padding: 0 15px;
+    }
+    
+    .explorar h2{
+        font-size: 30px;
+    }
+}
 /* -----------------------------Articles 2---------------------------- */
 
 .articles2{
@@ -281,11 +308,12 @@ h1, h2, a, button{
     .articles2{
         flex-direction: column;
         height: auto;
-        padding-bottom: 20px;
     }
     
     .articles2 p{
         margin-left: 90px;
+        margin-bottom: 15px;
+        height: auto;
     }
     
     .imgleft{
@@ -308,33 +336,22 @@ h1, h2, a, button{
 }
 
 @media screen and (max-width: 500px){
-    .articles2{
-        
-    }
-    
+  
     .articles2 p{
-        
+        margin: 0 0 15px 0;
+        height: auto;
     }
     
     .imgleft{
-        
-    }
-    
-    .margen{
-        
-    }
-    
-    .tartas{
-        
-    }
-    
-    .pan{
-        
+        float: none;
+        padding: 0;
+        display: block;
+        margin: 2px auto;
     }
 }
 /* -----------------------------Contacto ---------------------------- */
 
-.donde{
+.contacto{
     height: 380px;
     display: flex;
     align-items: center;
@@ -354,7 +371,7 @@ h1, h2, a, button{
     color: #d03b40;
 }
 
-.donde{
+.lugar{
     background: #d03b40;
     color: #ded6c0;
 }
@@ -363,6 +380,25 @@ span{
     font-family: OpenSans-Regular, sans-serif;
 }
 
+@media screen and (max-width: 500px){
+  
+    .contacto{
+        flex-direction: column;
+        height: 500px;
+    }
+    
+    .contmargen{
+        width: 100%;
+    }
+    
+    .contacta span{
+        padding: 0 15px;
+    }
+
+    .contacta span br{
+        display: none;
+    }
+}
 /* -----------------------------Derechos ---------------------------- */
 
 .derechos{
