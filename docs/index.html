@@ -14,20 +14,25 @@
 
   <header>
     <div id="menu-logo">
-      <!-- logo -->
-      <img src="Images/Logo.png" alt="logo" id="logo">
 
-      <!-- menu -->
-      <ul id="menu">
-        <li><a href="">EL ESPACIO</a></li>
-        <li><a href="">PRODUCTOS</a></li>
-        <li><a href="">OFERTAS</a></li>
-        <li><a href="">RESERVAS</a></li>
-        <li><a href="">CONTACTO</a></li>
-      </ul>
+      <div class="logo-boton">
+        <!-- logo -->
+        <img src="Images/Logo.png" alt="logo" id="logo">
+        <!-- menu -->
+        <button class="boton" onclick="action()">MENÚ</button>
+      </div>
+      
+      <div id="menu">
+        <a href="#" class="a hide">EL ESPACIO</a>
+        <a href="#" class="a hide">PRODUCTOS</a>
+        <a href="#" class="a hide">OFERTAS</a>
+        <a href="#" class="a hide">RESERVAS</a>
+        <a href="#" class="a hide">CONTACTO</a>
+      </div>
     </div>
+
+    <!-- presentacion -->
     <div id="enunciado">
-      <!-- presentacion -->
       <h1>RECIÉN HECHO, <br> TODOS LOS DÍAS</h1>
       <hr class="hr">
       <p>
@@ -78,7 +83,7 @@
     
     <div class="margen">
 
-      <div class="pan mbottom">
+      <div class="pan">
         <img src="Images/Icono1.png" alt="pan" class="imgleft">
         <h2>PAN RECIÉN HECHO</h2>
         <p cla>Cupcake danish I love halvah bonbon icing donut. Sweet caramels gingerbread bear claw jujubes chocolate
@@ -103,7 +108,7 @@
 
     <div class="margen">
 
-      <div class="tortas mbottom">
+      <div class="tartas">
         <img src="Images/Icono2.png" alt="tartas" class="imgleft">
         <h2>TARTAS PARA CADA DÍA</h2>
         <p>Cookie cake jelly beans chocolate cake carrot cake croissant icing. Caramels liquorice sesame snaps sugar
@@ -155,8 +160,12 @@
       <span>Septiembre 2019 . Todos los derechos reservados</span> 
   </div>
 
-  <script src="">
-    
+  <script>function action() {
+    var variable = document.getElementsByClassName('a');
+    for (var i = 0; i < variable.length; i++) {
+      variable[i].classList.toggle('hide');
+    }
+  }
   </script>
 </body>
 

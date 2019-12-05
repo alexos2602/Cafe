@@ -41,10 +41,10 @@ Botones: 14px */
 
 body{
     background: lightslategray;
-    margin: auto;
+    margin: 0;
 }
 /* ------------------------------heaer-------------------------------------- */
-/* ------------------------------heaer-------------------------------------- */
+
 header{
     height: 100vh;
     background-image: url(../Images/Fondo1.jpg);
@@ -57,7 +57,7 @@ p{
     font-family: OpenSans-Regular, sans-serif;
 }
 
-h2{
+h1, h2, a, button{
     font-family: OpenSans-Bold, sans-serif;
 }
 
@@ -71,21 +71,25 @@ h2{
     margin: 15px;
 }
 
+.boton{
+    display: none;
+    padding: 0;
+    border: none;
+    background: none;
+    color: #f5f0ed;
+    cursor: pointer;
+}
+
 #menu{
     padding: 0;
     margin: 20px;
     float: right;
 }
 
-#menu li{
-    display: inline;
-}
-
-#menu li a{
+#menu .a{
     padding: 4px;
     text-decoration: none;
     color: #f5f0ed;
-    font-family: OpenSans-Bold, sans-serif;
 }
 
 #enunciado{
@@ -95,7 +99,6 @@ h2{
 
 #enunciado h1{
     font-size: 50px;
-    font-family: OpenSans-Bold, sans-serif;
     line-height: 50px;
 }
 
@@ -109,10 +112,55 @@ h2{
 }
 
 #enunciado p{
-    font-family: OpenSans-Regular, sans-serif;
     margin: auto;
     line-height: 160%;
     max-width: 450px;
+}
+
+@media screen and (max-width: 500px){
+
+    header{
+    height: auto;
+    }
+
+    #menu-logo{
+        height: auto;
+    
+    }
+   .boton{
+    display: inline-block;
+    margin-right: 15px;
+    }
+
+    #menu{
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        float: none;
+    }
+
+    .hide{
+        display: none;
+    }
+
+    .logo-boton{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #enunciado{
+        height: auto;
+    }
+
+    #enunciado h1{
+        font-size: 40px;
+        line-height: 50px;
+    }
+
+    #enunciado p{
+        padding: 15px;
+    }
 }
 /* -----------------------------Articles---------------------------- */
 
@@ -130,6 +178,7 @@ h2{
 .margenar{
     height: inherit;
     width: 50%;
+    padding: 0 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -220,10 +269,69 @@ h2{
     margin: 0 20px;
 }
 
-.mbottom{
+.pan{
     margin-bottom: 40px;
 }
 
+.tartas{
+    margin-bottom: 40px;
+}
+
+@media screen and (max-width: 1146px){
+    .articles2{
+        flex-direction: column;
+        height: auto;
+        padding-bottom: 20px;
+    }
+    
+    .articles2 p{
+        margin-left: 90px;
+    }
+    
+    .imgleft{
+        width: 80px;
+    }
+    
+    .margen{
+        width: initial;
+    }
+    
+    .tartas{
+        margin-bottom: 0;
+    }
+    
+    .pan{
+        margin-top: 20px;
+        margin-bottom: 0;
+    }
+
+}
+
+@media screen and (max-width: 500px){
+    .articles2{
+        
+    }
+    
+    .articles2 p{
+        
+    }
+    
+    .imgleft{
+        
+    }
+    
+    .margen{
+        
+    }
+    
+    .tartas{
+        
+    }
+    
+    .pan{
+        
+    }
+}
 /* -----------------------------Contacto ---------------------------- */
 
 .donde{
